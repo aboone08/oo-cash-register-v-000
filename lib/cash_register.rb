@@ -5,7 +5,7 @@ class CashRegister
   def initialize(discount=0)
     @total = 0
     @discount = discount
-    @employee_discount = employee_discount
+    @employee_discount = (price * discount)/100
     @items = []
   end
 
@@ -25,7 +25,7 @@ class CashRegister
 
   def apply_discount
     if @discount > 0
-      @employee_discount = (price * discount)/100
+
       @total -= @employee_discount
       return "After the discount, the total comes to $#{total}."
     else
