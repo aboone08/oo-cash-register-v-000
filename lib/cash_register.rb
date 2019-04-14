@@ -33,7 +33,7 @@ class CashRegister
   end
 
   def void_last_transaction
-    :item.pull(total)
+    :item.pop(total)
   end
 
 
