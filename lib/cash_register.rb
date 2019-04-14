@@ -27,10 +27,10 @@ class CashRegister
       @employee_discount = (price * discount)/100
       @total -= @employee_discount
       return "After the discount, the total comes to $#{total}."
-    else 
+    else
       return "There is no discount to apply."
     end
   end
-  
+
 
 end
