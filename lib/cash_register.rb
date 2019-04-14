@@ -33,7 +33,7 @@ class CashRegister
   end
 
   def void_last_transaction
-    add_item.pop()
+    @items.pop()
   end
 
 
